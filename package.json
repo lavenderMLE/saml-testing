@@ -5,7 +5,9 @@
     "main": "app.js",
     "scripts": {
         "debug": "ndb server.js",
-        "server": "nodemon server.js"
+        "server": "nodemon server.js",
+        "build": "sucrase ./src -d ./dist --transforms imports",
+        "start": "node ./dist/server.js"
     },
     "author": "Moath Shreim",
     "license": "ISC",
